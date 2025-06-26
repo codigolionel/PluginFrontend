@@ -50,8 +50,9 @@ const Card = () => {
       {/* Tu imagen original */}
       <img 
         className="imagens" 
-        src="https://cdn11.bigcommerce.com/s-hvzya2q3vy/images/stencil/1280x1280/products/48845/132755/sldsdvmr_159202__08999.1688555311.png?c=1&imbypass=on" 
+        src=" https://i.pinimg.com/736x/46/77/01/4677015fda4dd736ddc63f12ab5d4c87.jpg" 
         alt="Plugin" 
+        // https://cdn11.bigcommerce.com/s-hvzya2q3vy/images/stencil/1280x1280/products/48845/132755/sldsdvmr_159202__08999.1688555311.png?c=1&imbypass=on
       />
       
       {/* Formulario con los campos solicitados */}
