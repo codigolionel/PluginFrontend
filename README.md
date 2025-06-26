@@ -1,13 +1,26 @@
-# React + Vite
+ya inicialice mi proyecto nuevo con el visual studio code, y cree mi nuevo repositorio e hice estos pasosecho "# pluginsfrontend" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/codigolionel/pluginsfrontend.git
+git push -u origin main ahora, cada ves que modifico mi proyecto como y cuales son los comandos en la terminal para subir los cambios?
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ 
 
-Currently, two official plugins are available:
+🚀 Pasos para subir cambios al repositorio remoto (trabajo individual)
+bash
+Copiar
+Editar
+# 1. Agregar todos los archivos modificados al área de preparación
+git add .
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 2. Crear un commit con un mensaje descriptivo de los cambios
+git commit -m "Descripción de los cambios realizados"
 
-## Expanding the ESLint configuration
+# 3. Subir los cambios al repositorio remoto en la rama main
+git push origin main
+💡 Repetí estos pasos cada vez que modifiques tu proyecto y quieras guardar los cambios en GitHub.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# pluginsfrontend
+https://github.com/gonzalezvictorjuan/fullstack-connection-basics/ clase 28 consumir backend
+

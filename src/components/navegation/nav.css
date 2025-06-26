@@ -1,0 +1,54 @@
+
+.navegation logo {
+    border-radius: 15px;
+}
+
+.navegation img {
+    margin-top: 30px;
+    width: 80px;
+    
+}
+
+.theplugin {
+    color: yellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    
+    
+}
+
+.crea {
+            padding: 10px 20px;
+            background-color: rgb(8, 255, 8);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+}
+
+.crea:hover{  background-color: rgb(7, 121, 7);
+  transform: translateY(-2px);
+}
+
+
+.elimina {    
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+}
+
+.elimina:hover{  background-color: rgb(117, 9, 9);
+  transform: translateY(-2px);
+}
+
+h2 {
+    color: yellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+
+}

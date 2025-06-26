@@ -1,0 +1,250 @@
+/* ===== CONTENEDOR PARA MÚLTIPLES TARJETAS ===== */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== TU TARJETA INDIVIDUAL ===== */
+.container {
+  border: 1px solid #ddd;
+  max-width: 240px;
+  /* QUITAR: margin: 1rem auto; - Ya no necesario */
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover opcional */
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Tu imagen original - mejorada */
+.imagens {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.form-section {
+  padding: 20px;
+}
+
+.form-section h3 {
+  margin: 0 0 20px 0;
+  color: #1f2937;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Grupos de campos */
+.field-group {
+  margin-bottom: 16px;
+}
+
+.field-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+/* Inputs de texto y select */
+.field-group input[type="text"],
+.field-group select,
+.field-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-sizing: border-box;
+}
+
+.field-group input[type="text"]:focus,
+.field-group select:focus,
+.field-group textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Placeholder styling */
+.field-group input::placeholder,
+.field-group textarea::placeholder {
+  color: #9ca3af;
+}
+
+/* Select específico */
+.field-group select {
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Textarea específico */
+.field-group textarea {
+  resize: vertical;
+  min-height: 80px;
+  font-family: inherit;
+}
+
+/* Grupo del checkbox */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #3b82f6;
+  cursor: pointer;
+}
+
+.checkbox-group label {
+  margin-bottom: 0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* ===== BOTONES - tu clase original mejorada ===== */
+
+.but {
+  display: flex;
+  gap: 12px;
+  padding: 0 20px 20px 20px;
+}
+
+/* Tus botones originales con nuevos estilos */
+#eliminar,
+#editar {
+  flex: 1;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#eliminar {
+  background-color: #ef4444;
+  color: white;
+}
+
+#eliminar:hover {
+  background-color: #dc2626;
+  transform: translateY(-1px);
+}
+
+#editar {
+  background-color: #3b82f6;
+  color: white;
+}
+
+#editar:hover {
+  background-color: #2563eb;
+  transform: translateY(-1px);
+}
+
+#eliminar:active,
+#editar:active {
+  transform: translateY(0);
+}
+
+/* ===== SECCIÓN DEBUG ===== */
+
+.debug-info {
+  padding: 16px 20px;
+  background-color: #f8fafc;
+  border-top: 1px solid #e5e7eb;
+}
+
+.debug-info h4 {
+  margin: 0 0 12px 0;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.debug-info pre {
+  background-color: #1f2937;
+  color: #10b981;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  overflow-x: auto;
+  margin: 0;
+  font-family: 'Courier New', monospace;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media (max-width: 768px) {
+  .container {
+    max-width: calc(100% - 2rem);
+    margin: 1rem;
+  }
+  
+  .form-section {
+    padding: 16px;
+  }
+  
+  .but {
+    padding: 0 16px 16px 16px;
+    flex-direction: column;
+  }
+  
+  #eliminar,
+  #editar {
+    flex: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 0.5rem;
+  }
+  
+  .form-section {
+    padding: 12px;
+  }
+  
+  .but {
+    padding: 0 12px 12px 12px;
+  }
+  
+  .imagens {
+    height: 150px;
+  }
+}
+
+/* ===== ANIMACIONES ADICIONALES ===== */
+
+.field-group {
+  animation: fadeInUp 0.3s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
